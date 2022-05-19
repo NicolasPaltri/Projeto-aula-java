@@ -1,0 +1,17 @@
+package java_2021;
+
+public class App {
+
+	public static void main(String[] args) {
+		String nome;
+		int i;
+		
+		nome = "Nicolas";
+		
+		while(i < 5) {
+		System.out.println("O nome é " + nome);
+
+	}
+
+  }
+}

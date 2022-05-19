@@ -1,0 +1,11 @@
+
+public class Livros {
+String titulo;
+String autor;
+}
+
+class LivroTeste{
+	public static void main(String[]args) {
+		Livros[]meusLivros = new Livros[3];
+	}
+}

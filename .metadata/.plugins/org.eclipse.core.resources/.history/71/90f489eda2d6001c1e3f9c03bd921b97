@@ -1,0 +1,15 @@
+
+public class AppString {
+
+	public static void main(String[] args) {
+		Pelicano[] filhotes;
+		
+		filhotes = new Pelicano[2];
+		
+		Pelicano p1 = new Pelicano();
+		
+		filhotes[0] = p1;
+
+	}
+
+}

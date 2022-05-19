@@ -1,0 +1,23 @@
+package zoologico;
+
+public class Pelicano {
+	boolean bico;
+	String cor;
+	int peso;
+	
+	public void voar() {
+		if(peso > 50) {
+		System.out.println("O pelicano não consegue voar , está muito pesado");
+	}else {
+		System.out.println("O pelicano está voando!");
+	 }
+	}
+	public void comer() {
+		System.out.println("O pelicano está comendo");
+	}
+	public void definirNome(String nome) {
+		System.out.println("O nome do Pelicano é" + nome);
+	}
+	public String retornaCor();
+	return cor();
+}

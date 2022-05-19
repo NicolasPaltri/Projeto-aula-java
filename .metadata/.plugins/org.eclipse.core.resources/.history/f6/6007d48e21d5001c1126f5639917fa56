@@ -1,0 +1,14 @@
+package zoologico;
+
+public class Zoologico {
+
+	public static void main(String[] args) {
+		Pelicano p1;
+		
+		p1 = new Pelicano();
+		
+		p1.voar();
+
+	}
+
+}

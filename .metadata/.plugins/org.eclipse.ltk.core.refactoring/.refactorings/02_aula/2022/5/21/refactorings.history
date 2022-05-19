@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Pelicano.java&apos; to &apos;03_aula/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;02_aula&apos;&#x0D;&#x0A;- Destination element: &apos;03_aula/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;zoologico.Pelicano.java&apos;" description="Copy compilation unit" destination="=03_aula/src&lt;" element1="/src&lt;zoologico{Pelicano.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1652874892926" units="1" version="1.0"/>
+</session>

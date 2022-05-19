@@ -1,0 +1,22 @@
+
+public class App02 {
+
+	public static void main(String[] args) {
+	int n = 0;
+	String Virgula = ",";
+			
+	while(n <= 10) {
+		if(n == 10) {
+			Virgula ="";
+		}
+		System.out.print(n + Virgula);
+		n++;
+		
+		
+		
+		
+	}
+	
+	
+	}
+}

@@ -1,0 +1,28 @@
+
+public class Livros {
+String titulo;
+String autor;
+}
+
+class LivroTeste{
+	public static void main(String[]args) {
+		Livros[]meusLivros = new Livros[3];
+		
+		int x = 0;
+		meusLivro l1 = new Livros;
+		
+		meusLivros[0].titulo ="Java forever";
+		meusLivros[1].titulo ="Java em orbita";
+		meusLivros[2].titulo ="Cozinhe com Java";
+		
+		meusLivros[0].autor ="Bob";
+		meusLivros[1].autor ="Sue";
+		meusLivros[2].autor ="Ian";
+		
+		while(x < 3) {
+			System.out.println(meusLivros[x].titulo);
+			System.out.println("de");
+			System.out.println(meusLivros[x].autor);
+		}
+	}
+}
