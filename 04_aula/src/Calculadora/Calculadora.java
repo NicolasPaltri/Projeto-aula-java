@@ -1,8 +1,21 @@
 package Calculadora;
 
 public class Calculadora {
+	
 	private double valor1;
 	private double valor2;
+	
+	public Calculadora() {
+		
+	}
+	
+	
+	public Calculadora(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = b;
+	}
+	
+	
 	public double getValor1() {
 		return valor1;
 	}
@@ -14,6 +27,9 @@ public class Calculadora {
 	}
 	public void setValor2(double valor2) {
 		this.valor2 = valor2;
+	}
+	public double somar() {
+		return valor1 + valor2;
 	}
 	public double somar(double a, double b) {
 		this.valor1 = a;

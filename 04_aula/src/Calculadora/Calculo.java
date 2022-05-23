@@ -7,6 +7,8 @@ public class Calculo {
 		
 		Calculadora calculadora = new Calculadora();
 		
+		System.out.println(calculadora.somar(5, 8));
+	/*	
 		System.out.println("Multiplicação " + calculadora.multiplicar(40, 4));
 		System.out.println("Soma " + calculadora.somar(5, 6));
 		
@@ -17,7 +19,7 @@ public class Calculo {
 		}else {
 			System.out.println("Dividir " + calculo);
 		}
-
+*/
 	}
 
 }
