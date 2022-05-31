@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class App {
 
 	public static void main(String[] args) {
-		int opcao, idade, media, excluir;
-		Client cliente;
+		int opcao, idade, media, excluir, listaCliente;
+		Cliente cliente;
 		String nome, telefone;
 		App app = new App();
 		Scanner teclado = new Scanner(System.in);
 		
-		List<Client> banco = new ArrayList <Client>();
+		List<Cliente> banco = new ArrayList <Cliente>();
 		
 		/////////////////////////////////////////////////////////////////////
 		
@@ -32,7 +32,7 @@ public class App {
 			opcao = teclado.nextInt();
 			
 			if(opcao == 1) {
-				cliente = new Client();
+				cliente = new Cliente();
 				
 				System.out.println("---------------------------");
 				System.out.println("informe o nome do cliente");
@@ -51,14 +51,42 @@ public class App {
 				
 				
 			} else if(opcao == 2) {
-				for(Client c: banco) {
+				for(Cliente c: banco) {
 					System.out.println(c.getNome() + " - " + c.getIdade());
 				}
 				
 			} else if(opcao == 3) {
 				
 				System.out.println("A média das idades é " + app.calcularMedia(banco));
-			} else if (opcao == 5) {
+			
+			}else if (opcao == 4) {
+				int i;
+				
+				System.out.println("Qual indice você deseja alterar? ");
+				i = teclado.nextInt();
+				
+				Cliente novoCliente = banco.get(i);
+				
+				System.out.println("Qual indice você deseja alterar? ");
+				i = teclado.nextInt();
+				
+				System.out.println("Insira o nome do cliente: ");
+				nome = teclado.next();
+				
+				System.out.println("Insira o numero do telefone : ");
+				telefone = teclado.next();
+				
+				System.out.println("Insira a idade: ");
+				idade = teclado.nextInt();
+				
+				novoCliente.setNome(nome);
+				novoCliente.setTelefone(telefone);
+				novoCliente.setIdade(idade);
+				
+				banco.add(novoCliente);
+			
+
+				}else if (opcao == 5) {
 				System.out.println("Escolha o indice do cliente para excluilo.");
 				excluir = teclado.nextInt();
 				banco.remove(excluir);
@@ -74,36 +102,40 @@ public class App {
 
 	}
 	
-	public double calcularMedia(List<Client> lista) {
+	public double calcularMedia(List<Cliente> lista) {
 		int somaIdade = 0;
-		for(Client c: lista) {
+		for(Cliente c: lista) {
 			somaIdade += c.getIdade();
 		}
 		
 		return(somaIdade / lista.size());
 	}
-	public List<Client> carregarBanco(){
-		List<Client> lista = new ArrayList<Client>();
+	
+	public List<Cliente> carregarBanco(){
+		List<Cliente> lista = new ArrayList<Cliente>();
 		List<String> nomes = new ArrayList<String>();
-		Client cliente;
+		Cliente cliente;
 		Random random = new Random();
 		
-		nomes.add("Joao");
-		nomes.add("Silva");
+		nomes.add("Nicolas");
+		nomes.add("Carla");
+		nomes.add("Claudia");
+		nomes.add("João");
+		nomes.add("Toni");
+		nomes.add("Fabio");
+		nomes.add("Edina");
 		nomes.add("Lucas");
-		nomes.add("Carlos");
-		nomes.add("Airton");
-		nomes.add("Julina");
 		
-		for(int i = 0; i < 5; i++);{
-			cliente = new Client();
+		for(int i = 0; i < 5; i++) {
+			cliente = new Cliente();
 			
 			cliente.setNome(nomes.get(random.nextInt(nomes.size())));
-			cliente.setTelefone("xx-xxx-xxx" +i);
-			cliente.setIdade(98 + 1);
+			cliente.setTelefone("xx-xxxx-xxx"+i);
+			cliente.setIdade(random.nextInt(98) + 1);
 			
 			lista.add(cliente);
-}
+		}
+		
 		return lista;
 	}
 }

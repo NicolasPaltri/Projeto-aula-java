@@ -1,6 +1,6 @@
 package Lista;
 
-public class Client {
+public class Cliente {
 	private String nome;
 	private int idade;
 	private String telefone;
