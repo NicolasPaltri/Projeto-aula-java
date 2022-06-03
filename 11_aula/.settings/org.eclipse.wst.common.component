@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="TutorialWeb">
+        
+    <wb-module deploy-name="11_aula">
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="TutorialWeb"/>
-        <property name="java-output-path" value="/TutorialWeb/build/classes"/>
+                
+        <property name="java-output-path" value="/11_aula/build/classes"/>
+        <property name="context-root" value="11_aula"/>
+            
     </wb-module>
+    
 </project-modules>

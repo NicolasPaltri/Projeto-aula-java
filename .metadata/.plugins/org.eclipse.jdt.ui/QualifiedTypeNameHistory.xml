@@ -16,4 +16,5 @@
     <fullyQualifiedTypeName name="util.Util"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="visao.Menu"/>
+    <fullyQualifiedTypeName name="servico.ServicoLogin"/>
 </qualifiedTypeNameHistroy>
